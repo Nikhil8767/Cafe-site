@@ -1,0 +1,155 @@
+ {{!-- <link rel="stylesheet" href="css/style.css"> --}}
+ <style>
+    body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: #2c3e50;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    width: 100%;
+    max-width: 400px;
+    background: #34495e;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.register-box {
+    position: relative;
+    padding: 40px;
+    background: #34495e;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+}
+
+.register-box h2 {
+    margin: 0 0 30px;
+    padding: 0;
+    color: #fff;
+    text-align: center;
+}
+
+.user-box {
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.user-box input[type="text"],
+.user-box input[type="email"],
+.user-box input[type="phone"],
+.user-box input[type="age"],
+.user-box input[type="password"]
+
+
+ {
+    width: 100%;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #fff;
+    margin-bottom: 30px;
+    border: none;
+    border-bottom: 1px solid #fff;
+    outline: none;
+    background: transparent;
+}
+
+.user-box label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #fff;
+    pointer-events: none;
+    transition: 0.5s;
+}
+
+.user-box input:focus ~ label,
+.user-box input:valid ~ label {
+    top: -20px;
+    left: 0;
+    color: #03e9f4;
+    font-size: 12px;
+}
+
+.gender-options {
+    display: flex;
+    justify-content: space-between;
+    color: #fff;
+    font-size: 16px;
+}
+
+.gender-options label {
+    display: flex;
+    align-items: center;
+}
+
+.gender-options input {
+    margin-right: 5px;
+}
+
+button {
+    background: none;
+    border: none;
+    outline: none;
+    color: #fff;
+    background: #03e9f4;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: 0.5s;
+}
+
+button:hover {
+    background: #039be5;
+}
+
+ </style>
+  <div class="container">
+        <div class="register-box">
+            <h2 style="margin-top: 300px; padding: 30px;">Register on your site</h2>
+            <form action="/user-register" method="post">
+                <div class="user-box">
+                    <input type="text" name="firstname" required>
+                    <label>first name</label>
+                </div>
+                <div class="user-box">
+                    <input type="text" name="lastname" required>
+                    <label>lastname </label>
+                </div>
+                <div class="user-box">
+                    <input type="email" name="email" required>
+                    <label>Email</label>
+                </div>
+                <div class="user-box">
+                   
+                    <input type="radio" name="gender" value="male" required>male
+                    <input type="radio" name="gender" value="male" required>female
+                   
+                </div>
+                <div class="user-box">
+                    <input type="phone" name="phone" required>
+                    <label>phone</label>
+                </div>
+                 <div class="user-box">
+                    <input type="age" name="age" required>
+                    <label>age</label>
+                </div>
+                <div class="user-box">
+                    <input type="password" name="password" required>
+                    <label>Password</label>
+                </div>
+                <div class="user-box">
+                    <input type="password" name="confirmpassword" required>
+                    <label>Confirm Password</label>
+                </div>
+                <button type="submit" value="register">Register</button>
+            </form>
+        </div>
+    </div>

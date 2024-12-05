@@ -1,0 +1,1 @@
+"mongodb+srv://nikhilgupta932003:nikhilgupta@cluster0.k6s0eab.mongodb.net/login?retryWrites=true&w=majority&appName=cluster0"
