@@ -1,7 +1,7 @@
 {
     "builds": [
       {
-        "src": "backend/**",
+        "src": "/**",
         "use": "@vercel/node"
       }
     ],
