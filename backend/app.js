@@ -14,6 +14,7 @@ app.get("/", (req,res) => {
     message: "Hello"
   })
 })
+const allowedOrigins = ["https://cafe-site-596l.vercel.app"];
 // Middleware for CORS
 app.use(
   cors({
