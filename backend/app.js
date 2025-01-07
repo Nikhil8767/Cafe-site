@@ -19,7 +19,7 @@ const allowedOrigins = ["https://cafe-site-596l.vercel.app"];
 app.use(
   cors({
     // origin: process.env.FRONTEND_URL, // Allow only your frontend's URL
-    origin: ["cafe-site-596l.vercel.app"],
+    origin: ["https://cafe-site-596l.vercel.app", "https://cafe-site-orpin.vercel.app"],
     methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"], // Allowed HTTP methods
     credentials: true, // Allow credentials (cookies, etc.)
   })
