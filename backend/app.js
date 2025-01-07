@@ -9,6 +9,11 @@ import reservationRouter from "./routes/reservationRoutes.js";
 const app = express();
 dotenv.config({ path: "./config/config.env" });
 
+app.get("/", (req,res) => {
+  res.json({
+    message: "Hello"
+  })
+})
 // Middleware for CORS
 app.use(
   cors({
