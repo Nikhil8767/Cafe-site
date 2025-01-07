@@ -18,7 +18,7 @@ app.get("/", (req,res) => {
 app.use(
   cors({
     // origin: process.env.FRONTEND_URL, // Allow only your frontend's URL
-    origin: ["cafe-site-iu8n.vercel.app"],
+    origin: ["cafe-site-596l.vercel.app"],
     methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"], // Allowed HTTP methods
     credentials: true, // Allow credentials (cookies, etc.)
   })
